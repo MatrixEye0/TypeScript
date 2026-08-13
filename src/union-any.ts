@@ -20,3 +20,5 @@ for (let order of orders) {
 }
 
 console.log(orderstatus);
+// unknown -> It can store any type of value, but before using it, you must check its type. 
+// but in any they story any type and not check the type before using it 
