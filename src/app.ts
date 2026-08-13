@@ -1,4 +1,5 @@
-let test : number = 15;
-console.log(test);
-let test2:string ="Jagjit";
-console.log(test2);
+function greet(name: string): string{
+return `Hello, ${name}, you are a  billionar`
+}
+const user = "Jagjit Singh";
+console.log(greet(user));
