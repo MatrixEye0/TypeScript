@@ -1,6 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Type narrowing means reducing a union type to a more specific type after checking it. use when working with APIs, React props, and backend data.
+Object.defineProperty(exports, "__esModule", { value: true });
 function get(id) {
     if (typeof id === 'string') {
         return `id ${id} is string`; // here we use string builtin js method not other because we set condition is string
@@ -47,6 +47,7 @@ function getSports(sport) {
     }
 }
 console.log(getSports({ type: "pitch", khiladi: 11 }));
+//type narrowing with help of in operator
 function getSports2(sportCheck) {
     if ("players" in sportCheck) {
         return `football is played on ${sportCheck.type} with ${sportCheck.players} players`;

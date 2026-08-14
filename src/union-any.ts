@@ -22,3 +22,18 @@ for (let order of orders) {
 console.log(orderstatus);
 // unknown -> It can store any type of value, but before using it, you must check its type. 
 // but in any they story any type and not check the type before using it 
+
+let value:any;
+value ="Jagjit";
+value=22;
+value=true;
+value.toUpperCase(); // no error because any type can be used without type checking
+
+let newvalue:unknown;
+newvalue ="Jagjit";
+newvalue=22;
+newvalue=true;
+// newvalue.toUpperCase(); error because unknown type cannot be used without type checking
+if(typeof newvalue === 'string'){
+    newvalue.toUpperCase(); // no error because we have checked the type of newvalue before using it
+}
