@@ -4,9 +4,6 @@ let response = "67";
 let numberLength = response.length; // forcefully asserting the type of response to string to access the length property
 let user = '{"name":"Jagjit Singh","age":22,"isActive":true}';
 let userobj = JSON.parse(user); // forcefully asserting the type of userobj to moreType to access its properties.
-// JSoN.parse() returns any type by default, so we need to assert the type to moreType to access its properties without TypeScript errors.
-// JSON.parse() used to convert a JSON string into a object. It takes a string as input and returns an object. 
-const inputElement = document.getElementById("input");
 function checkUser(user) {
     if (user === "admin") {
         console.log("Admin user");
