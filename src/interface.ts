@@ -60,3 +60,29 @@ const test:user3={
 }
 test.course="JavaScript" // This is allowed because 'course' is not readonly
 //test.name="Jagjit Singh" // This will throw an error because 'name' is readonly
+
+// void ----------------------------------------
+
+interface food{
+    name():void,
+    rating():void // if we use like this it mean we must use this both.void not return anything
+}
+const test2: food={
+    name(){"Malai Chaap"},
+    rating(){9}
+}
+
+// when we want key and value set by me but define both type .
+interface car{
+    [name:string]:number
+}
+const detail :car={
+    Audi:55
+}
+
+
+// inherit interface like this ----------------------------------------------
+interface A {a:string}
+interface B {b:number}
+
+interface C extends A,B{}

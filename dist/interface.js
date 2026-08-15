@@ -19,5 +19,13 @@ const test = {
     course: "TypeScript"
 };
 test.course = "JavaScript"; // This is allowed because 'course' is not readonly
-//test.name="Jagjit Singh" // This will throw an error because 'name' is readonly
+const test2 = {
+    name() {
+        "Malai Chaap";
+    },
+    rating() { 9; }
+};
+const detail = {
+    Audi: 55
+};
 //# sourceMappingURL=interface.js.map
