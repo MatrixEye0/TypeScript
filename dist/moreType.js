@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let response = "67";
 let numberLength = response.length; // forcefully asserting the type of response to string to access the length property
 let user = '{"name":"Jagjit Singh","age":22,"isActive":true}';
@@ -26,4 +24,5 @@ function checkUser2(user2) {
     }
     user; // here show string on hover because guest not checked . here string other file se bhi aa skta hai.
 }
+export {};
 //# sourceMappingURL=moreType.js.map

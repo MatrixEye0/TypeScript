@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // they make variable with two types with help of union type 
 let count = '4';
 console.log(count);
@@ -33,4 +31,5 @@ newvalue = true;
 if (typeof newvalue === 'string') {
     newvalue.toUpperCase(); // no error because we have checked the type of newvalue before using it
 }
+export {};
 //# sourceMappingURL=union-any.js.map

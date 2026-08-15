@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let country;
 country = {
     name: "India",
@@ -26,4 +24,5 @@ const tech4 = {
 {
     name: "ML";
 }
+export {};
 //# sourceMappingURL=objects.js.map

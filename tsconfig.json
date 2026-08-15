@@ -7,8 +7,8 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
-    "target": "ES2020",
+    "module": "ESNext",
+    "target": "ES2022",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],

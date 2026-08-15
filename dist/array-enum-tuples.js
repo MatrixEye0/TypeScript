@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const country = ["IN", "USA", "UK"];
 const rank = [4, 1, 5];
 const economy = [
@@ -28,4 +26,5 @@ var user;
 })(user || (user = {})); // by defaul value 0 se start hogi aur 1,2 chalegi if 100 se start kari to 101, 102 chalegi
 const val = user.average;
 console.log(val);
+export {};
 //# sourceMappingURL=array-enum-tuples.js.map

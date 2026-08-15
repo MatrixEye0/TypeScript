@@ -1,6 +1,4 @@
-"use strict";
 //Generics allow you to write code that can work with different types while still keeping TypeScript's type safety.
-Object.defineProperty(exports, "__esModule", { value: true });
 function wrapArr(item) {
     return [item];
 }
@@ -19,4 +17,5 @@ const response = {
     status: 4,
     data: { accept: "yes" }
 };
+export {};
 //# sourceMappingURL=generics.js.map

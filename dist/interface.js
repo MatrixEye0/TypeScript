@@ -1,13 +1,9 @@
-"use strict";
 //type IGame = {cricket: "bat"|"ball",} | {football: "ball"|"goalpost"}
 //A type can represent: unoin , primitive, obj , tuple , function , it is more flexible tahn interface but it cannot be extended or implemented by a class
-Object.defineProperty(exports, "__esModule", { value: true });
 class game {
-    constructor() {
-        this.sport = "Cricket";
-        this.player = 11;
-        this.win = true;
-    }
+    sport = "Cricket";
+    player = 11;
+    win = true;
 }
 const person = {
     name: "Jagjit",
@@ -28,4 +24,5 @@ const test2 = {
 const detail = {
     Audi: 55
 };
+export {};
 //# sourceMappingURL=interface.js.map

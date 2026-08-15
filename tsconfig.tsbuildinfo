@@ -1,0 +1,1 @@
+{"version":"7.0.2","root":["./src/app.ts","./src/array-enum-tuples.ts","./src/axios.ts","./src/generics.ts","./src/interface.ts","./src/moretype.ts","./src/objects.ts","./src/opps.ts","./src/typenarrowing.ts","./src/union-any.ts"],"packageJsons":["./node_modules/axios/package.json","./package.json"]}
