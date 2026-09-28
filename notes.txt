@@ -1,0 +1,142 @@
+# TypeScript (TS) Setup in VS Code — One Page
+
+## 1. Check Node.js
+## 1. Create Project
+
+```bash
+mkdir typescript-demo
+cd typescript-demo
+npm init -y
+
+## 2. Install TypeScript
+npm install -D typescript
+
+Check version:
+
+npx tsc -v
+
+
+## 3. Create `tsconfig.json`
+
+npx tsc --init
+```
+
+`tsconfig.json` = TypeScript compiler configuration file.
+
+## 4. Create TS File
+
+Create:
+
+```text
+src/index.ts
+```
+
+Example:
+
+```ts
+let name: string = "Jagjit";
+let age: number = 21;
+
+console.log(name);
+console.log(age);
+```
+
+---
+
+## 5. Compile TS → JS
+
+```bash
+npx tsc
+```
+
+TypeScript:
+
+```text
+src/index.ts
+      ↓
+   TypeScript
+      ↓
+dist/index.js
+```
+
+Run JavaScript:
+
+```bash
+node dist/index.js
+```
+
+---
+
+## 6. Recommended Folder Structure
+
+```text
+typescript-demo/
+│
+├── src/
+│   └── index.ts
+│
+├── dist/
+│   └── index.js
+│
+├── node_modules/
+├── package.json
+├── package-lock.json
+└── tsconfig.json
+```
+
+---
+
+## 7. Recommended `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
+```
+
+### Important Terms
+
+| Term            | Meaning                      |
+| --------------- | ---------------------------- |
+| `.ts`           | TypeScript file              |
+| `tsc`           | TypeScript compiler          |
+| `npx tsc`       | Compile TS → JS              |
+| `tsconfig.json` | Compiler configuration       |
+| `src`           | Source TypeScript code       |
+| `dist`          | Compiled JavaScript          |
+| `strict`        | Enables strict type checking |
+| `node`          | Runs JavaScript              |
+
+### Quick Command Revision
+
+```bash
+mkdir typescript-demo
+cd typescript-demo
+npm init -y
+npm install -D typescript
+npx tsc --init
+npx tsc
+node dist/index.js
+```
+
+**Flow:**
+
+```text
+Write .ts
+   ↓
+npx tsc
+   ↓
+.js
+   ↓
+node file.js
+```
+
+**Note:** VS Code already has built-in TypeScript support, so a separate TypeScript extension is normally not required.
