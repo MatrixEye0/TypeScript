@@ -4,7 +4,7 @@ function wrapArr<T>(item:T):T[]{
     return [item]
 }
 const firstNumber = wrapArr([10, 20, 30]);
-const firstName = wrapArr(["Jagjit", "Aman", "Rahul"]);
+const firstName = wrapArr(["Jagjit", "Aman", "Rahul","Mahima"]);
  wrapArr([{},{},{}]); // also write like this
 
 // pair---------------------------------------
